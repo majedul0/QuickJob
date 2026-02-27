@@ -2,7 +2,7 @@ import { createContext, useContext, useState, useEffect } from "react";
 
 const AuthContext = createContext(null);
 
-const API_BASE = import.meta.env.VITE_API_URL || "/api";
+const API_BASE = import.meta.env.VITE_API_URL || "https://quickjob-backend-tc2a.onrender.com/api";
 const API_URL = `${API_BASE}/auth`;
 
 export function AuthProvider({ children }) {
