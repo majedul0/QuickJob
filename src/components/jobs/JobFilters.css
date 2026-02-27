@@ -1,0 +1,17 @@
+.job-filters {
+  display: flex;
+  gap: var(--space-4);
+  flex-wrap: wrap;
+}
+
+.job-filters .select-group {
+  min-width: 180px;
+  flex: 1;
+  max-width: 250px;
+}
+
+@media (max-width: 480px) {
+  .job-filters .select-group {
+    max-width: 100%;
+  }
+}

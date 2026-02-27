@@ -1,0 +1,311 @@
+/* ==============================
+   Job Detail Page
+   ============================== */
+
+/* Breadcrumb bar */
+.job-detail__breadcrumb-bg {
+  background-color: var(--color-gray-50);
+  padding: var(--space-4) 0;
+  border-bottom: 1px solid var(--color-gray-200);
+}
+
+.job-detail__back {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-2);
+  font-size: var(--text-sm);
+  font-weight: 500;
+  color: var(--color-gray-500);
+  transition: color var(--transition-fast);
+  cursor: pointer;
+}
+
+.job-detail__back:hover {
+  color: var(--color-primary);
+}
+
+/* Container layout */
+.job-detail__container {
+  display: grid;
+  grid-template-columns: 1fr 320px;
+  gap: var(--space-10);
+  padding-top: var(--space-10);
+  padding-bottom: var(--space-16);
+}
+
+/* Not Found */
+.job-detail__not-found {
+  text-align: center;
+  padding: var(--space-20) 0;
+}
+
+.job-detail__not-found h2 {
+  font-size: var(--text-2xl);
+  margin-bottom: var(--space-4);
+}
+
+.job-detail__not-found p {
+  margin-bottom: var(--space-6);
+}
+
+/* Main content */
+.job-detail__main {
+  min-width: 0;
+}
+
+/* Header card */
+.job-detail__header-card {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-6);
+  padding: var(--space-8);
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  margin-bottom: var(--space-8);
+}
+
+.job-detail__logo {
+  width: 64px;
+  height: 64px;
+  border-radius: var(--radius-md);
+  flex-shrink: 0;
+}
+
+.job-detail__header-info {
+  flex: 1;
+  min-width: 0;
+}
+
+.job-detail__title {
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-2);
+}
+
+.job-detail__company {
+  font-size: var(--text-base);
+  color: var(--color-gray-500);
+  margin-bottom: var(--space-3);
+}
+
+.job-detail__dot {
+  margin: 0 var(--space-1);
+}
+
+.job-detail__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+.job-detail__header-action {
+  flex-shrink: 0;
+}
+
+/* Sections */
+.job-detail__section {
+  margin-bottom: var(--space-8);
+}
+
+.job-detail__section h2 {
+  font-size: var(--text-xl);
+  font-weight: 700;
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-4);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.job-detail__section p {
+  font-size: var(--text-base);
+  line-height: 1.7;
+  color: var(--color-gray-600);
+}
+
+.job-detail__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-3);
+}
+
+.job-detail__list li {
+  position: relative;
+  padding-left: var(--space-6);
+  font-size: var(--text-base);
+  line-height: 1.6;
+  color: var(--color-gray-600);
+}
+
+.job-detail__list li::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  width: 6px;
+  height: 6px;
+  background-color: var(--color-primary);
+  border-radius: 50%;
+}
+
+/* Apply Form */
+.job-detail__apply {
+  background-color: var(--color-gray-50);
+  padding: var(--space-8);
+  border-radius: var(--radius-lg);
+  border: 1px solid var(--color-gray-200);
+}
+
+.job-detail__apply h2 {
+  border-bottom: none;
+  padding-bottom: 0;
+  margin-bottom: var(--space-6);
+}
+
+.job-detail__form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-5);
+}
+
+.job-detail__form-actions {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin-top: var(--space-2);
+}
+
+/* Success state */
+.job-detail__success {
+  text-align: center;
+  background-color: var(--color-accent-light);
+  padding: var(--space-10);
+  border-radius: var(--radius-lg);
+}
+
+.job-detail__success-icon {
+  width: 64px;
+  height: 64px;
+  background-color: var(--color-accent);
+  color: var(--color-white);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: var(--text-2xl);
+  font-weight: 700;
+  margin: 0 auto var(--space-4);
+}
+
+.job-detail__success h2 {
+  border-bottom: none;
+  margin-bottom: var(--space-3);
+}
+
+.job-detail__success p {
+  margin-bottom: var(--space-6);
+}
+
+/* Sidebar */
+.job-detail__sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-6);
+}
+
+.job-detail__sidebar-card {
+  background-color: var(--color-white);
+  border: 1px solid var(--color-gray-200);
+  border-radius: var(--radius-lg);
+  padding: var(--space-6);
+}
+
+.job-detail__sidebar-card h3 {
+  font-size: var(--text-lg);
+  font-weight: 600;
+  color: var(--color-gray-700);
+  margin-bottom: var(--space-5);
+  padding-bottom: var(--space-3);
+  border-bottom: 1px solid var(--color-gray-100);
+}
+
+.job-detail__sidebar-row {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  margin-bottom: var(--space-4);
+  color: var(--color-gray-500);
+}
+
+.job-detail__sidebar-row:last-child {
+  margin-bottom: 0;
+}
+
+.job-detail__sidebar-row > svg {
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+.job-detail__sidebar-row > div {
+  display: flex;
+  flex-direction: column;
+}
+
+.job-detail__sidebar-label {
+  font-size: var(--text-xs);
+  color: var(--color-gray-400);
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  font-weight: 500;
+}
+
+.job-detail__sidebar-value {
+  font-size: var(--text-sm);
+  color: var(--color-gray-700);
+  font-weight: 500;
+}
+
+.job-detail__sidebar-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2);
+}
+
+/* ==============================
+   Responsive
+   ============================== */
+@media (max-width: 1024px) {
+  .job-detail__container {
+    grid-template-columns: 1fr 260px;
+    gap: var(--space-6);
+  }
+}
+
+@media (max-width: 768px) {
+  .job-detail__container {
+    grid-template-columns: 1fr;
+  }
+
+  .job-detail__header-card {
+    flex-direction: column;
+    align-items: stretch;
+    padding: var(--space-5);
+  }
+
+  .job-detail__header-action {
+    margin-top: var(--space-3);
+  }
+
+  .job-detail__header-action .btn {
+    width: 100%;
+  }
+
+  .job-detail__form-actions {
+    flex-direction: column;
+  }
+
+  .job-detail__form-actions .btn {
+    width: 100%;
+  }
+}
